@@ -1,0 +1,29 @@
+{
+    "name": "linters-html-reporters",
+    "version": "1.0.0",
+    "description": "Simple HTML reporters for linters",
+    "author": "Shuhrat Shadmonkulov <zumra6a@yandex-team.ru>",
+    "homepage": "https://github.com/shuhrat/linters-html-reporters#readme",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shuhrat/linters-html-reporters.git"
+    },
+    "bugs": {
+        "url": "https://github.com/shuhrat/linters-html-reporters/issues"
+    },
+    "dependencies": {
+        "handlebars": "^4.0.5"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "jscs",
+        "jshint",
+        "stylint",
+        "html",
+        "reporters"
+    ]
+}
