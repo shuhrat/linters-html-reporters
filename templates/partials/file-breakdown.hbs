@@ -1,29 +1,33 @@
-<table class="table table-hover">
-    <tr class="active">
-        <th class="text-left">Pos</th>
-        <th>Evidence</th>
-        <th>Rule</th>
-    </tr>
-
-    {{~#each files~}}
-        <tr>
-            <td colspan="3">
-                <b>{{path}}</b>
-            </td>
+{{~#if files.length}}
+    <table class="table table-hover">
+        <tr class="active">
+            <th class="text-left">Pos</th>
+            <th>Evidence</th>
+            <th>Rule</th>
         </tr>
 
-        {{~#each messages~}}
-            {{~#row this~}}
-                <td class="text-left">
-                    {{#if line}}
-                        {{line}}:{{column}}
-                    {{/if}}
+        {{~#each files~}}
+            <tr>
+                <td colspan="3">
+                    <b>{{path}}</b>
                 </td>
-                <td>
-                    <div class="evidence">{{evidence}}</div>
-                </td>
-                <td>{{rule}}</td>
-            {{~/row~}}
+            </tr>
+
+            {{~#each messages~}}
+                {{~#row this~}}
+                    <td class="text-left">
+                        {{#if line}}
+                            {{line}}:{{column}}
+                        {{/if}}
+                    </td>
+                    <td>
+                        <div class="evidence">{{evidence}}</div>
+                    </td>
+                    <td>{{rule}}</td>
+                {{~/row~}}
+            {{~/each~}}
         {{~/each~}}
-    {{~/each~}}
-</table>
+    </table>
+{{~else~}}
+    <p>Everything seems to be ok!</p>
+{{~/if~}}
