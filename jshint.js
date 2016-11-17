@@ -44,9 +44,6 @@ module.exports = {
             });
 
             files[filename] = file;
-
-            console.log(error);
-
         });
 
         data.files = Object.keys(files).map(function(filename) {
