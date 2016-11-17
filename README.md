@@ -1,0 +1,1 @@
+# linters-html-reporters
